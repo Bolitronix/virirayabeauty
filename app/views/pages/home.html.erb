@@ -1,2 +1,108 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div>
+  <div class=container>
+    <div class="container ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag "carrusel1.jpg", class: "d-block w-100", alt: "first slide", width: 300, height: 380 %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "carrusel2.jpg", class: "d-block w-100", alt: "first slide", width: 300, height: 380 %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "carrusel1.jpg", class: "d-block w-100", alt: "first slide", width: 300, height: 380 %>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+
+
+  <div class=container>
+
+    <div class="container mt-4 mb-1">
+      <div class="row">
+        <div class="col-12 col-md-5 imagenpresentacion" style="background-image: url('<%= asset_path('testblack.jpg') %>')">
+
+
+
+        <button class="accordion" >VIRIDIANA RAYA</button>
+        <div class="panel">
+
+          <a href="https://www.youtube.com/channel/UCsR5VIZwGN9pzyBp3OqvTQw" target="_blank"><%= image_tag "youtube.png", :size =>"18x18"  %></a>
+          <a href="https://www.facebook.com/ViridianaRayaOficial" target="_blank"><%= image_tag "facebook.png", :size =>"18x18", class:"ms-2"%></a>
+          <a href="https://www.instagram.com/viridiana.raya/?fbclid=IwAR2xywRAXBPLDnGZ2zX1Mhu3e-E5oH9KNBLEqeXQHMqEFuZMPeI_OPsfYJE" target="_blank"><%= image_tag "instagram.png", :size =>"18x18", class:"ms-2"  %></a>
+          <a href="https://www.tiktok.com/@viridiana.raya?fbclid=IwAR3mHTnW1TkA5fkEooIYDgh4oWvu8wDlnv_wxw47PzaGrsDwUqEZs6qmoCg" target="_blank"><%= image_tag "tik-tok(3).png", :size =>"18x18", class:"ms-2"  %></a>
+          <a href="#" target="_blank"><%= image_tag "twitter.png", :size =>"18x18", class:"ms-2"  %></a>
+        </div>
+
+
+
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="row mt-1">
+          <div class="col d-flex justify-content-center card-presentation align-items-center">
+            <p style=" text-align: justify;" > Licenciada en Relaciones Internacionales por la Universidad Nacional Autónoma de México, Diseñadora de Maquillaje Profesional
+            certificada ante el Consejo Nacional de Normalización y Certificación de Competencias Laborales de la Secretaría de Educación Pública en México.
+            Especialista en técnicas de maquillaje aerografico con certificación internacional “Temptu Pro’s Basic and Advanced Airbrush Cosmetics Training”
+            de la marca Temptu Cosmetics de Nueva York, Estados Unidos de América. Con estudios en peinado profesional y aplicación de extensiones de cabello
+            por diversas instituciones de México y por la Asociación Mundial de Educadores en Belleza (A.M.E.B.).
+            Técnica Aplicadora Acreditada de uñas postizas por la marca Organic Nails.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container mb-2">
+    <div class="row  d-flex justify-content-center">
+      <div class="col-4 ms-lg-4 mt-3 card-jobs text-center d-flex align-items-center justify-content-center">
+
+        <div class="mt-3">
+          <h3>MISIÓN</h3>
+          <p >
+          Transmitir a nuestra comunidad todos los conocimientos adquiridos y técnicas desarrolladas por mi en la prestación de servicios de belleza relacionados con el maquillaje,
+          el peinado y las uñas postizas que he implementado en esta industria y que van desde temas básicos y elementales, hasta los de especialización y actualización,
+          transmitiendoles con el más alto nivel educativo.</p>
+         </div>
+      </div>
+      <div class="col-4 ms-md-4 mt-3 card-jobs text-center d-flex align-items-center justify-content-center">
+          <div>
+          <h3>VISIÓN</h3>
+          <p >
+          Convertirnos en un referente educativo de alta calidad y fácil acceso que le permita a cualquier persona con dispositivo conectado a internet aprender las habilidades profesionales que demandan los servicios de maquillaje,
+          peinado y uñas postizas con la intención de transformar su economía.</p>
+         </div>
+      </div>
+            <div class="col-4 ms-md-4 mt-3 card-jobs text-center d-flex align-items-center justify-content-center">
+          <div>
+          <h3>VALORES</h3>
+
+          <div>Pasión.</div>
+          <div>Visión a largo plazo.</div>
+          <div>Equipos > Héroes.</div>
+          <div>Compromiso.</div>
+          <div>Creatividad.</div>
+          <div>Resiliencia.</div>
+          <div>Gratitud.</div>
+
+
+         </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

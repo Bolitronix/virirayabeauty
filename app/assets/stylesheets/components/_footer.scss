@@ -1,0 +1,41 @@
+.footer {
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  height: 220px;
+
+  color: rgb(0, 0, 0);
+}
+
+.youtube{
+  color: red;
+}
+
+.facebook{
+  color: blue;
+}
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.colorarrow{
+  background-color: rgba($color: rgb(113, 113, 113), $alpha: .3);
+  opacity: 10;
+}
+
+
+/* Estilo por defecto para pantallas grandes */
+.social-icon {
+  width: 35px ;
+  height: 35px ;
+
+}
+
+/* Estilo para pantallas más pequeñas */

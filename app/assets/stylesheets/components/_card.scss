@@ -1,0 +1,27 @@
+.card-jobs {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  // width: 500px;
+  border-radius: 5px;
+  border-color: rgb(231, 117, 11);
+}
+
+
+
+.card-jobs {
+ padding: 16px;
+}
+
+.card-presentation{
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  // width: 500px;
+  border-radius: 5px;
+  border-color: rgb(231, 117, 11);
+  height: 375px;
+  width: 400px;
+  object-fit: cover;
+  font-size: 20px;
+}

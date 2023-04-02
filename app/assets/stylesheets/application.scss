@@ -10,3 +10,160 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+
+.contenedor{
+  min-height: calc(100vh - 50px - 200px);
+}
+
+/* Ajusta el zoom para pantallas pequeñas */
+@media (max-width: 320px) {
+  .card-jobs {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .card-presentation{
+    font-size:12px;
+  }
+
+  .contactanos, .aviso{
+    font-size:9px;
+    margin-top: 1cm;
+    margin-left: -1rem;
+
+  }
+  .social-icon {
+    zoom: 50%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .card-jobs {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .card-presentation{
+    font-size:13px;
+  }
+  .contactanos, .aviso{
+    font-size:10px;
+    margin-top: 1cm;
+
+  }
+  .social-icon {
+    zoom: 50%;
+  }
+
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .card-jobs {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .card-presentation{
+    font-size:14px;
+  }
+
+  .contactanos, .aviso{
+    font-size:11px;
+    margin-top: 1cm;
+
+  }
+  .social-icon {
+    zoom: 50%;
+  }
+
+}
+/* Ajusta el zoom para pantallas medianas */
+// @media (min-width: 577px) and (max-width: 770px) {
+//   .card-jobs {
+//     height: 350px;
+//     width: 400px;
+//     object-fit: cover;
+//   }
+//   .contactanos {
+
+//     margin-left: 2rem;
+//     margin-top: 3rem;
+
+//   }
+// }
+
+/* No aplica zoom para pantallas grandes (por defecto) */
+@media (min-width: 768px) {
+
+
+  .card-presentation{
+    font-size: 15px;
+  }
+  .card-jobs {
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .contactanos, .aviso {
+
+    margin-left: 2rem;
+    margin-top: 3rem;
+
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  body {
+    zoom: 100%;
+  }
+
+  .card-presentation{
+    font-size:17px;
+  }
+
+  .card-jobs {
+    height: 400px;
+    width: 280px;
+    object-fit: cover;
+  }
+  .contactanos, .aviso {
+
+    margin-left: 3rem;
+    margin-top: 3rem;
+
+  }
+
+}
+
+@media (min-width: 1440px) {
+  body {
+    zoom: 100%;
+  }
+
+  .card-presentation{
+    font-size:20px;
+  }
+
+  .card-jobs {
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .contactanos, .aviso {
+
+    margin-left: 3rem;
+    margin-top: 2rem;
+
+  }
+
+}
+
+@media (min-width: 1900px) {
+ html{
+  zoom: 125%;
+ }
+}
