@@ -34,9 +34,22 @@
       });
 
     </script> %>
+<style>
+  .info__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+background-image: url('<%= image_url("/assets/fotologo1.jpg") %>');
+  background-size: cover;
+  background-position: center;
+}
+.info__img:hover {
+  background-image: url('<%= image_url('/assets/imagenlogo.png')%>');
+}
+</style>
 
-
-    <div  class="info__img" style="background-image: url('/assets/fotologo1.jpg');" ></div>
+    <div  class="info__img"  ></div>
     <div class="container-info__name-container">
       <h3 class="container-info__name">VIRIDIANA RAYA</h3>
       <i class="container-info__check fas fa-check-circle"></i>
