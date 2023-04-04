@@ -13,9 +13,9 @@
 
 
 
-.contenedor{
-  min-height: calc(100vh - 50px - 200px);
-}
+// .contenedor{
+//   min-height: calc(100vh - 50px - 200px);
+// }
 
 /* Ajusta el zoom para pantallas pequeñas */
 @media (max-width: 320px) {
@@ -25,7 +25,7 @@
     object-fit: cover;
   }
   .card-presentation{
-    font-size:12px;
+    font-size:13px;
   }
 
   .contactanos, .aviso{
@@ -35,7 +35,14 @@
 
   }
   .social-icon {
-    zoom: 50%;
+    zoom: 60%;
+  }
+
+  .container-card {
+
+    width: 250px;
+    height: 50px;
+
   }
 }
 
@@ -46,7 +53,7 @@
     object-fit: cover;
   }
   .card-presentation{
-    font-size:13px;
+    font-size:15px;
   }
   .contactanos, .aviso{
     font-size:10px;
@@ -54,7 +61,14 @@
 
   }
   .social-icon {
-    zoom: 50%;
+    zoom: 65%;
+  }
+
+  .container-card {
+
+    width: 300px;
+    height: 50px;
+
   }
 
 }
@@ -65,7 +79,7 @@
     object-fit: cover;
   }
   .card-presentation{
-    font-size:14px;
+    font-size:16px;
   }
 
   .contactanos, .aviso{
@@ -74,7 +88,14 @@
 
   }
   .social-icon {
-    zoom: 50%;
+    zoom: 68%;
+  }
+
+  .container-card {
+
+    width: 350px;
+    height: 50px;
+
   }
 
 }
@@ -98,7 +119,7 @@
 
 
   .card-presentation{
-    font-size: 15px;
+    font-size: 16px;
   }
   .card-jobs {
     height: 350px;
@@ -112,6 +133,12 @@
 
   }
 
+  .container-card {
+
+    width: 500px;
+    height: 50px;
+
+  }
 
 }
 
@@ -121,7 +148,7 @@
   }
 
   .card-presentation{
-    font-size:17px;
+    font-size:19px;
   }
 
   .card-jobs {
@@ -135,6 +162,12 @@
     margin-top: 3rem;
 
   }
+  .container-card {
+
+    width: 550px;
+    height: 50px;
+
+  }
 
 }
 
@@ -144,7 +177,7 @@
   }
 
   .card-presentation{
-    font-size:20px;
+    font-size:21px;
   }
 
   .card-jobs {
@@ -160,10 +193,23 @@
 
   }
 
+  .container-card {
+
+    width: 600px;
+    height: 50px;
+
+  }
+
 }
 
 @media (min-width: 1900px) {
  html{
   zoom: 125%;
  }
+ .container-card {
+
+  width: 650px;
+  height: 50px;
+
+}
 }

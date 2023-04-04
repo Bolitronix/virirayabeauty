@@ -1,3 +1,6 @@
 .imagenpresentacion{
-  height: 10cm;
+  height: 495px;
+  background-repeat: no-repeat;
+  background-size: cover;     /* Cambia a 'contain' si deseas que la imagen se ajuste dentro del contenedor */
+  background-position: top;
 }
