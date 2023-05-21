@@ -1,7 +1,8 @@
 .accordion {
   display: block;
-  background-color: #fe0101;
-  color: #444;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  text-shadow: 2px 2px 1px rgba(255, 0, 53, 0.5);
   cursor: pointer;
   padding: 5px 10px;
   width: 82%;
@@ -17,7 +18,7 @@
 }
 .panel {
   padding: 0 20px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 255, 255, 0.5);
   max-height: 0;
   width: 82%;
   overflow: hidden;

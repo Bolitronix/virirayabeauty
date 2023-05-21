@@ -1,3 +1,11 @@
+.navv a:hover {
+  color: #FF0099;
+}
+
+
+.stylenavbar a{
+  color:#FF0099;
+}
 nav {
   display: flex;
   flex-direction: column;
@@ -35,7 +43,7 @@ nav {
 
 a{
   text-decoration: none;
-  color: black;
+  color: rgb(54, 9, 9);
 }
 
 @media (max-width: 425px) {
