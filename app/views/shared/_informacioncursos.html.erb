@@ -1,0 +1,131 @@
+    <% @logo_image="1.png" %>
+<div class=" parttop pt-5 pb-5">
+  <div class="container">
+
+    <%=@titulo_del_curso  %>
+    <%=@reseña  %>
+  </div>
+</div>
+<div class="container containerer">
+
+  <div class="row">
+    <div class="col-9">
+      <div class="card" >
+
+        <iframe class="ms-3"width="800" height="350" src="<%= @videoyoutube %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title"><%=@nivel  %></h5>
+        <p class="card-text">Contenido del Curso: <%= @contcurso.html_safe %></p>
+
+        <h5 style="text-align: center;", class="mt-4">Ventajas</h5><ul class="mt-3">
+          <li>Este curso cuenta con más de <%= @horas_de_curso %> horas de contenido audiovisual.</li>
+          <li>Aprendizaje profesional secuencial y organizado.</li>
+          <li>Cuentas con asesoria personalizada durante los dos meses que tengas accesos al curso.</li>
+          <li>Podrás disponer imagenes y archivos de descarga para enriquecer tu aprendizaje.</li>
+          <li>Puedes realizar el curso si eres principiante o si ya cuentas con experiencia previa y decides afianzar tus conocimientos.</li>
+
+
+        </ul>
+
+  <h5 style="text-align: center;", class="mt-5">Preguntas Frecuentes:</h5>
+
+<div class="accordion accordion-flush accordionprincipal" id="accordionFlushExample">
+  <div class="accordion-item coloraccordion">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+        <!-- Contenido de la tarjeta de la izquierda -->
+
+  </div>
+  <div class="col-3">
+    <div class="card card-right sticky" style="width: 18rem;">
+      <%= image_tag @imagen, class: "card-img-top", alt: "maquillaje" %>
+
+      <div class="card-body">
+        <h5 class="card-title"><%=@titulo_del_curso  %></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+        <!-- Contenido de la tarjeta de la derecha -->
+    </div>
+  </div>
+</div>
+
+<style>
+.tamañosvideo{
+  width: 560;
+
+
+}
+  .containerer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-left {
+  width: 75%;
+}
+
+.card-right {
+  width: 25%;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px; /* Ajusta esta propiedad según tus necesidades */
+}
+
+  .accordion-body {
+    text-shadow: 1px 1px 1px #ffffff;
+  }
+
+
+</style>

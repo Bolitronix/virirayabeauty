@@ -1,0 +1,21 @@
+<div class="colornav pb-5">
+  <div class="container colornav">
+    <nav class="pd-3">
+  <% logo_image = "2.png"%>
+
+<div class="logo">
+  <%= image_tag @logo_image || "2.png", size: "190x110" %>
+</div>
+    </nav>
+    <div class="row justify-content-evenly">
+      <div class="navv col-2 inicio"><%= link_to "Inicio", root_path %></div>
+      <div class="navv col-2 academia"><%= link_to "Academia", academia_path %></div>
+      <div class="navv col-2"><a href="#">Productos</a></div>
+      <div class="navv col-2 redessociales"><%= link_to "Redes Sociales", redessociales_path %></div>
+
+      <div class="navv col-2"><a href="#">Contacto</a></div>
+      <div class="navv col-2 preguntafrecuente"><%= link_to "Preguntas Frecuentes", preguntas_frecuentes_index_path %></div>
+    </div>
+
+  </div>
+</div>

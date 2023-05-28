@@ -1,0 +1,170 @@
+    <% @logo_image="1.png" %>
+<div class="d-flex justify-content-evenly mt-5">
+  <div class="card cardcursos border-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">Curso de Automaquillaje Profesional</div>
+    <div class="card-body text-secondary">
+    <%= link_to academia_maquillaje_automaquillaje_path do %>
+
+      <%= image_tag "automaquillaje.png", class: "card-img-top", alt: "maquillaje" %>
+      <% end %>
+
+
+    <h5 class="text-center mt-2"><strong>550 MXN / mes</strong></h5>
+    <div class="d-grid gap-2">
+      <%= link_to "Más Información...", academia_maquillaje_automaquillaje_path, class: "btn btn-primary botonsuscribete" %>
+    </div>
+
+  <br>
+    <p>Aprenderás a maquillarte desde cero.</p>
+    </div>
+  </div>
+
+    <div class="card cardcursos border-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">Curso Rutina de Skin Care.</div>
+    <div class="card-body text-secondary">
+    <%= link_to academia_maquillaje_skincare_path do %>
+      <%= image_tag "skincare.png", class: "card-img-top", alt: "maquillaje" %>
+      <%end  %>
+
+    <h5 class="text-center mt-2"><strong>550 MXN / mes</strong></h5>
+    <div class="d-grid gap-2">
+      <%= link_to "Más Información...", academia_maquillaje_skincare_path, class: "btn btn-primary botonsuscribete" %>
+
+    </div>
+
+  <br>
+    <p>Aprenderás a realizarte una rutina de skin care correcta de principio a fin.</p>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="card cardcursos border-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">Teoría de Color Para Maquillaje.</div>
+    <div class="card-body text-secondary">
+    <%= link_to academia_maquillaje_teoriadelcolor_path do %>
+      <%= image_tag "tdelcolor.png", class: "card-img-top", alt: "maquillaje" %>
+      <% end %>
+
+
+    <h5 class="text-center mt-2"><strong>550 MXN / mes</strong></h5>
+    <div class="d-grid gap-2">
+      <%= link_to "Más Información...", academia_maquillaje_teoriadelcolor_path, class: "btn btn-primary botonsuscribete" %>
+    </div>
+
+  <br>
+    <p>Aprenderás a hacer todas las combinaciones posibles entre colores del circulo cromático para usarlos
+     en sombras para ojos, labiales, etc., y a darle armonía de color a tu maquillaje.</p>
+    </div>
+  </div>
+
+
+</div>
+
+
+  <%# <style>
+    .dropdown-content {
+      display: none;
+    }
+    .dropdown-content.show {
+      display: block;
+    }
+  </style>
+
+  <div class="dropdown">
+    <a href="#" class="dropdown-toggl" onclick="toggleDropdown()">Ver Contenido &#9660;</a>
+    <div id="dropdownContent" class="dropdown-content">
+      <!-- Contenido adicional -->
+      <p>Contenido:</p>
+      <ul>
+        <li><strong>Fundamentos del maquillaje.</strong></li>
+        <li><strong>Organización del área del trabajo.</strong> </li>
+        <li><strong>Etapa de preparación.</strong>
+          <ul>
+            <li><em> Cuidado del cutis.</em></li>
+            <li><em>Correcciones del cutis.</em></li>
+          </ul>
+        </li>
+        <li><strong>Base de maquillaje.</strong>
+          <ul>
+            <li><em>Teoría del color: la piel.</em>
+              <ul>
+                <li>Tonos y subtonos.</li>
+              </ul>
+            </li>
+            <li><em>Morfología y visagismo.</em>
+              <ul>
+                <li>Técnica del claro-obscuro.</li>
+              </ul>
+            </li>
+            <li><em>Base tradicional.</em></li>
+            <li><em>Base con correcciones por arriba.</em></li>
+            <li><em>Base con correcciones por abajo.</em></li>
+          </ul>
+
+        </li>
+        <li><strong>Cejas.</strong>
+          <ul>
+            <li><em>Teoría del color: el pelo.</em></li>
+            <li><em>Mapeo de cejas.</em></li>
+            <li><em>Diseño de cejas.</em></li>
+          </ul>
+        </li>
+        <li><strong>Ojos.</strong>
+          <ul>
+            <li><em>Teoría del color: los parpados y ojeras.</em></li>
+            <li><em>Preparación del contorno de ojos.</em></li>
+            <li><em>Resolución de casos en ojos.</em>
+              <ul>
+                <li>Técnicas de sombreado en ojos.</li>
+                <li>Delineados.</li>
+                <li>Pestañas.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Labios.</strong>
+          <ul>
+            <li><em>Teoría del color: los labios.</em></li>
+            <li><em>Mapeo de labios.</em></li>
+            <li><em>Diseño de labios.</em></li>
+          </ul>
+        </li>
+        <li><strong>Acabado de maquillaje.</strong>
+          <ul>
+            <li><em>Bronceador.</em></li>
+            <li><em>Rubor.</em></li>
+            <li><em>Iluminador.</em></li>
+            <li><em>Fijador de maquillaje.</em></li>
+
+          </ul>
+        </li>
+        <li><strong>Después del maquillaje.</strong></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      var dropdownContent = document.getElementById("dropdownContent");
+      dropdownContent.classList.toggle("show");
+
+      var dropdownToggle = document.querySelector(".dropdown-toggl  ");
+      if (dropdownContent.classList.contains("show")) {
+        dropdownToggle.innerHTML = "Ver menos &#9650;";
+      } else {
+        dropdownToggle.innerHTML = "Ver Contenido &#9660;";
+      }
+    }
+  </script>
+
+
+
+      <p style=" text-align: justify;">Técnicas de maquillaje que aprenderás: teoría básica del color para maquillar,
+      pasos de una rutina de skincare, tres tipos de aplicación de bases de maquillaje, dos diseños de cejas,
+      seis técnicas de sombreado en ojos, dos tipos de delineados, dos tipos de clasificación de pestañas,
+        4 técnicas de aplicación de pestañas, cuatro diseños de labios, larga duración en tu maquillaje para
+        todo tipo de piel y climas.</p> %>

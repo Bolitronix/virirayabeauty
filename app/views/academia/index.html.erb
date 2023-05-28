@@ -1,0 +1,305 @@
+    <% @logo_image="1.png" %>
+
+<style>
+  .academia a{
+  color:#FF0099;
+}
+
+
+  .accordion-body {
+    text-shadow: 1px 1px 1px #ffffff;
+  }
+
+
+
+.accordion-button:not(.collapsed) {
+    color: #C9AA4E;
+
+}
+</style>
+<h2 style="text-align: center;">Cursos:</h2>
+
+<div class="d-flex justify-content-evenly mt-5">
+  <div class="card cardcursos border-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">Maquillaje</div>
+    <div class="card-body text-secondary">
+      <%= link_to academia_maquillaje_path do %>
+        <%= image_tag "maquillaje.png", class: "card-img-top", alt: "maquillaje" %>
+      <% end %>
+
+
+
+    <div class="d-grid gap-2 mt-3">
+      <%= link_to "Mas Detalles", academia_maquillaje_path, class: "btn btn-primary botonsuscribete" %>
+    </div>
+
+  <br>
+    <p>****************************</p>
+    </div>
+  </div>
+
+    <div class="card cardcursos border-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">Peinado.</div>
+    <div class="card-body text-secondary">
+    <%= link_to academia_peinado_path do %>
+      <%= image_tag "peinado.png", class: "card-img-top", alt: "maquillaje" %>
+      <% end %>
+
+    <div class="d-grid gap-2 mt-3">
+      <%= link_to "Mas Detalles", academia_peinado_path, class: "btn btn-primary botonsuscribete" %>
+
+    </div>
+
+  <br>
+    <p>***************************************</p>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="card cardcursos border-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">Uñas.</div>
+    <div class="card-body text-secondary">
+      <%= link_to academia_unas_path do %>
+        <%= image_tag "unas.png", class: "card-img-top", alt: "maquillaje" %>
+      <% end %>
+
+
+    <div class="d-grid gap-2 mt-3">
+      <%= link_to "Mas Detalles", academia_unas_path, class: "btn btn-primary botonsuscribete" %>
+    </div>
+
+  <br>
+    <p>***************************************************</p>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+<div class="container mt-5">
+    <h2 style="text-align: center;">Preguntas Frecuentes:</h2>
+  <div class="accordion accordion-flush accordionprincipal" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          ¿Qué es Viridiana Raya Academic?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Es una plataforma de educación Online, con tu suscripción tienes acceso por dos meses al curso que elijas de las diferentes áreas de aprendizaje:
+                <ul>
+                <li>Maquillaje.</li>
+                <li>Peinado y Extensiones.</li>
+                <li>Uñas.</li>
+
+                </ul>
+                  Cada área está compuesta por cursos que harán de tu perfil uno de los más demandados de la industria. Además, cuentas con asesoría personalizada y podrás disponer de material de descarga como imágenes y archivos que enriquecerán tu aprendizaje siempre que el curso lo requiera.</p></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          ¿Qué necesito para tomar los cursos?
+
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Necesitas una conexión a Internet y una Computadora, Laptop, Tablet o Smartphone.
+          Haber realizado correctamente tu suscripción al curso.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          ¿Cómo funcionan los cursos? ¿Debo seguir un horario?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Todos nuestros cursos son online y están disponibles 24/7 en la plataforma que se te asigne dependiendo curso, cupo o accesibilidad.</div>
+      </div>
+    </div>
+    <!-- Nuevo elemento 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          ¿Cómo obtengo mi constancia o reconocimiento?
+              </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Podrás estudiar a tu ritmo durante dos meses. Al concluir los dos meses de tu estancia en el curso te graduas y obtienes una constancia sin necesidad de presentar práctica y/o examen teórico dependiendo el curso. Sin embargo, si presentas práctica y/o examen teórico dentro del tiempo establecido para que tomes tu curso se te otorgará un reconocimiento en el que se especifiquen dichas actividades realizadas.
+          De esta forma tú tienes la oportunidad de decidir con cuál documento te vas a graduar y de qué manera deseas concluir tu aprendizaje.</div>
+      </div>
+    </div>
+    <!-- Nuevo elemento 5 -->
+
+
+    <!-- Agregar elementos 6 al 17 -->
+
+
+
+    <!-- Agregar más elementos del 7 al 17 según el mismo patrón -->
+
+
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        ¿Cómo se realiza la entrega de tu certificado?
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Vía WhatsApp y/o por correo electrónico que nos proporcionaste al momento de tu inscripción.</div>
+      </div>
+    </div>
+
+    <!-- Agregar elementos 6 al 17 -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingSix">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        ¿Hay cursos gratis que me permitan ver cómo es Viridiana Raya Academic?
+        </button>
+      </h2>
+      <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Tenemos algunos cursos gratuitos disponibles en nuestras plataformas de YouTube  y de Facebook. Sin embargo aquí se ofrece una metodología de aprendizaje secuencial y organizada. Además de contar con asesoría personalizada, una constancia o un reconocimiento que avalan tu aprendizaje y experiencia.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingSeven">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        ¿Es obligatorio tener todos los productos de maquillaje, peinado o uñas para realizar el curso?      </button>
+      </h2>
+      <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">No es obligatorio para tomarlo y para obtener constancia del curso. Sin Embargo es importante que consideres que para obtener un reconocimiento del curso es necesario que entregues práctica, así que será necesario que cuentes con lo mínimo para poder llevarla a cabo.</div>
+      </div>
+    </div>
+
+    <!-- Agregar más elementos del 8 al 17 según el mismo patrón -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingEight">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+          ¿Qué medios de pago aceptan?
+        </button>
+      </h2>
+      <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Aceptamos tarjetas de crédito o tarjetas débito internacional (Visa, MasterCard o AMEX) que estén habilitadas para pagos online al extranjero. Puedes pagar mediante transferencia bancaria, PayPal o Mercado Pago; deposito en efectivo en Oxxo. Conoce todo sobre los métodos de pago y precios enviándonos mensaje de WhatsApp al: __</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingNine">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+          ¿Cuántos pagos debo realizar para acceder al curso?
+        </button>
+      </h2>
+      <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Un único pago por el precio total del curso. Se obtiene acceso inmediato a todo el contenido del curso.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTen">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+          ¿Puedo comprar dos o más cursos a la vez que estoy tomando uno?
+        </button>
+      </h2>
+      <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Claro que puedes, el aprendizaje depende de cada persona, además de tener buenos hábitos de estudio y horarios para cada tarea. Sin embargo, te recomendamos tomar máximo dos en simultáneo para que le dedique todo tu empeño y esfuerzo a completar tus cursos exitosamente.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingEleven">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+          Ya he pagado, ¿Qué sigue?
+        </button>
+      </h2>
+      <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Una vez que realices tu pago por alguna de nuestras modalidades de pago, es importante que nos envíes una foto de captura (screenshot) vía WhatsApp para que rectifiquemos que tu pago nos ha llegado correctamente. Posteriormente te enviaremos el link del curso que elegiste y obtendrás acceso inmediato, así como también los pasos a seguir para que obtengas tu constancia o reconocimiento con éxito.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwelve">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+          ¿A partir de cuándo comienza a correr el tiempo para realizar el curso?
+
+        </button>
+      </h2>
+      <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Comienza a correr el día que realizas tu pago y suscripción al curso.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThirteen">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+          ¿El curso tiene videos en vivo?
+        </button>
+      </h2>
+      <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body colorletrasacordion">No, son cursos con contenido audiovisual pregrabado al cual podrás acceder a cualquier hora del día según tu disponibilidad y ritmo personal.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFourteen">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+          Si me equivoco de curso, ya no lo quiero o por causas de fuerza mayor se me  complica tomarlo ¿Me pueden hacer reembolso para anular mi suscripción?
+        </button>
+      </h2>
+      <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Los pagos realizados no son reembolsables, únicamente se pueden considerar como abono para un curso de igual o mayor precio dentro de los dos meses de duración del curso o posteriormente. No se puede hacer cambio a un curso de menor precio que al que se haya pagado.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFifteen">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+          ¿Emiten factura fiscal?
+
+        </button>
+      </h2>
+      <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">No</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingSixteen">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+          ¿Puedo cambiar mi nombre en el certificado?
+        </button>
+      </h2>
+      <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Se puede cambiar por una única ocasión por errores ortográficos en letras, palabras o acentos; por el orden de los nombres o apellidos; o porque no incluiste un nombre o apellido en el momento de tu inscripción.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingSeventeen">
+        <button class="accordion-button collapsed borderaccordion mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+          ¿Cómo puedo saber el valor del curso según la moneda de mi país?
+        </button>
+      </h2>
+      <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">...</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+</div>

@@ -18,25 +18,13 @@
       });
 
     </script> %>
-<div class="colornav pb-5">
-  <div class="container colornav">
-    <nav class="pd-3">
-      <div class="logo">
-        <%= image_tag "logo.png", :size =>"190x100"%>
-      </div>
-    </nav>
-    <div class="row justify-content-evenly">
-      <div class="navv col-2 "><%= link_to "Inicio", root_path %></div>
-      <div class="navv col-2"><a href="#">Academia</a></div>
-      <div class="navv col-2"><a href="#">Productos</a></div>
-      <div class="navv col-2 stylenavbar"><%= link_to "Redes Sociales", redessociales_path %></div>
+        <% @logo_image="3.png" %>
 
-      <div class="navv col-2"><a href="#">Contacto</a></div>
-    </div>
-
-  </div>
-</div>
-
+<style>
+  .redessociales a{
+  color:#FF0099;
+}
+</style>
 
 <div class="containere d-flex flex-column justify-content-center align-items-center " >
   <div class="container-info mt-4">
